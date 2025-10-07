@@ -5,38 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Group Events Calendar</title>
 
-  <!-- FullCalendar Bundle CSS (includes dayGrid & interaction) -->
+  <!-- FullCalendar CSS -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
 
   <style>
-    body { font-family: sans-serif; margin: 20px; background: #f8fafc; }
-    h1 { text-align: center; color: #333; }
-    #calendar { max-width: 900px; margin: 40px auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f8fafc;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .register-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 10px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .register-btn:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <h1>Group Events Calendar</h1>
   <div id="calendar"></div>
 
-  <!-- FullCalendar Bundle JS -->
+  <!-- FullCalendar JS -->
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const calendarEl = document.getElementById('calendar');
 
+      const events = [
+        {
+          title: "Techapalooza for Job Seekers | 10.8.2025",
+          start: "2025-10-08T10:00:00",
+          end: "2025-10-08T14:00:00",
+          location: "American Job Center in Pilsen, 1700 W 18th St, Chicago, IL 60608",
+          description:
+            "Join us for TECHAPALOOZA! Network and connect with local companies to learn about available training, careers, and more.",
+          link: "https://www.eventbrite.com/e/techapalooza-for-job-seekers-tickets-123456789"
+        },
+        {
+          title: "Tech Empowerment (AI and Us: Ethical Choices and Everyday Actions)",
+          start: "2025-10-08T13:00:00",
+          end: "2025-10-08T14:30:00",
+          location: "Forest Park Public Library, 7555 Jackson Blvd, Forest Park, IL 60130",
+          description:
+            "Explore the intersection of AI and ethics — let's navigate the digital world together!",
+          link: "https://www.eventbrite.com/e/tech-empowerment-ai-and-us-tickets-987654321"
+        },
+        {
+          title: "Chicago Tech Career Fair: Exclusive Tech Hiring Event",
+          start: "2025-10-31T11:00:00",
+          end: "2025-10-31T14:00:00",
+          location: "Virtual Event (Online, Chicago, IL 60602)",
+          description:
+            "Virtual Tech Career Fair with hiring partners from startups and Fortune 500s, focused on diversity and inclusion.",
+          link: "https://careerscrossroad.com/signup?code=ChiTCF"
+        }
+      ];
+
       const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         editable: false,
         selectable: false,
-        events: [
-          { title: 'Team Meeting', start: '2025-10-10', description: 'Monthly meeting at 10 AM' },
-          { title: 'Project Deadline', start: '2025-10-15', description: 'Marketing project due' },
-          { title: 'Workshop: JS Basics', start: '2025-10-20', description: 'Beginner JavaScript workshop' }
-        ],
+        events: events,
+        eventDidMount: function(info) {
+          // Create a Register button dynamically
+          const btn = document.createElement('a');
+          btn.textContent = 'Register';
+          btn.href = info.event.extendedProps.link;
+          btn.target = '_blank';
+          btn.className = 'register-btn';
+          // Append it below event title
+          const titleEl = info.el.querySelector('.fc-event-title');
+          if (titleEl) {
+            titleEl.appendChild(document.createElement('br'));
+            titleEl.appendChild(btn);
+          }
+        },
         eventClick: function(info) {
+          info.jsEvent.preventDefault(); // prevent default click
           alert(
-            `Event: ${info.event.title}\nDate: ${info.event.start.toDateString()}\nDetails: ${info.event.extendedProps.description || 'No details'}`
+            `Event: ${info.event.title}\n\n` +
+            `Date: ${info.event.start.toLocaleString()}\n` +
+            `Location: ${info.event.extendedProps.location || 'N/A'}\n\n` +
+            `Details: ${info.event.extendedProps.description || 'No details provided.'}`
           );
         }
       });
