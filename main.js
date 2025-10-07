@@ -21,13 +21,85 @@ const events = [
       "Explore the intersection of AI and ethics — let's navigate the digital world together!\nRegister here: https://www.eventbrite.com/e/tech-empowerment-ai-and-us-tickets-987654321"
   },
   {
-    title: "Chicago Tech Career Fair: Exclusive Tech Hiring Event",
-    start: "2025-10-31T11:00:00",
-    end: "2025-10-31T14:00:00",
-    location: "Virtual Event (Online, Chicago, IL 60602)",
-    description:
-      "Virtual Tech Career Fair with hiring partners from startups and Fortune 500s, focused on diversity and inclusion.\nRegister here: https://careerscrossroad.com/signup?code=ChiTCF"
-  }
+  title: "Optimize AI Infrastructure: From Bottlenecks to Breakthrough (Webinar by Fixstars)",
+  start: "2025-10-09T14:00:00",
+  end: "2025-10-09T14:40:00",
+  location: "Online",
+  description:
+    "Join Fixstars Solutions for a practical webinar on AI performance engineering. Learn to uncover inefficiencies in GPU infrastructure and apply optimizations to accelerate AI workloads and reduce costs. The session features B200 GPU case studies, a live demo of Fixstars AIBooster, and a short Q&A.\nRegister here: https://www.eventbrite.com/e/webinar-optimize-ai-infrastructure-from-bottlenecks-to-breakthrough-tickets-1743816404809?aff=ebdssbdestsearch"
+}
+{
+  title: "Tech Tuesday (Avoiding Spam and Scams)",
+  start: "2025-10-14T13:00:00",
+  end: "2025-10-14T14:30:00",
+  location: "La Grange Public Library, 10 West Cossitt Avenue, La Grange, IL 60525",
+  description:
+    "Join Wright to Learn, LLC at Tech Tuesday to learn how to navigate the digital jungle without falling for spam and scams. This in-person event covers spotting phishing, tech support fraud, and suspicious messages, with tips to reduce spam and protect your information online.\nTickets: https://www.eventbrite.com/e/tech-tuesday-avoiding-spam-and-scams-tickets-1693141284159"
+}
+{
+  title: "JIC Speaker Series: Building A Tech Startup in School with Landon Campbell",
+  start: "2025-11-06T17:30:00",
+  end: "2025-11-06T19:00:00",
+  location: "DePaul University - Jarvis Student Center for Innovation and Collaboration, 1 East Jackson Boulevard, Concourse Level, Chicago, IL 60604",
+  description:
+    "Hear from Landon Campbell, DePaul alum and Drive Capital investor, as he shares insights on building a tech startup in college, cultivating an ownership mindset, and navigating the founder–investor relationship. Learn about early-stage innovation, professional development, and Chicago's startup scene at this in-person talk and Q&A. Light fare provided.\n"
+}
+{
+  title: "Google AI DevTalks Live (Ep 4) - Hands-on Agentic AI Workshop",
+  start: "2025-10-10T11:30:00",
+  end: "2025-10-10T12:30:00",
+  location: "Online",
+  description:
+    "Join the Chicago AI/LLMs/ML Developers Group for a virtual Google AI DevTalks Live session featuring a hands-on workshop on building agentic AI applications with Google expert Annie Wang. This event series offers deep-dive talks, live demos, code labs, and networking with a global tech community. Register on the event website to receive the joining link; recording available for registrants.\nRegister here: https://www.aicamp.ai/event/eventdetails/W2025092209"
+}
+{
+  title: "The Art & Craft of AI: A Hands-On Workshop",
+  start: "2025-10-14T18:00:00",
+  end: "2025-10-14T20:30:00",
+  location: "Intercom, 1330 West Fulton Street, Chicago, IL",
+  description:
+    "Join Startup Grind Chicago for an interactive workshop on AI adoption led by Jazmyn Lopez and Vikas Srinath of PraxIQ at Intercom HQ. Learn how to deploy AI with context and intention, build adoption frameworks, and avoid legal and compliance risks. This hands-on session includes live demos, collaborative challenges, and practical insights designed for entrepreneurs, operators, creatives, and changemakers. RSVP here: https://www.startupgrind.com/events/details/startup-grind-chicago-presents-the-art-amp-craft-of-ai-a-hands-on-workshop/"
+}
+{
+  title: "Chicago Data Night: Kemal Badur (UChicago)",
+  start: "2025-10-22T17:30:00",
+  end: "2025-10-22T19:30:00",
+  location: "Drive Capital, Fulton East Building, 8th Floor, 215 N Peoria Street, Chicago, IL",
+  description:
+    "Join Chicago Data Night, cohosted by Drive Capital, ChiData, and the University of Chicago Data Science Institute, with special partner Booth’s Center for Applied AI. Enjoy networking, a talk on 'Building AI Tools for the Enterprise' by Kemal Badur, CTO of University of Chicago, Q&A, hors d’oeuvres, and drinks. Admission is free with RSVP encouraged.\nMore info: https://www.meetup.com/chicago-data-night/events/311106058/"
+}
+{
+  title: "AIDataTech Connect: Global Virtual Networking Event for AI, Data & Tech Pros",
+  start: "2025-10-23T17:00:00",
+  end: "2025-10-23T19:00:00",
+  location: "Online",
+  description:
+    "Join Analytics.Club Chicago for AIDataTech Connect, a global virtual networking event for professionals in AI, data science, and machine learning. Engage in interactive Slack-style group discussions, 1-on-1 video/text chats, and collaborative opportunities. Discover AI jobs, projects, and connect with industry experts from around the world. Watch how it works: https://www.youtube.com/watch?v=NRUTXUOFKm4 Join here: https://events.tao.ai/pod/analytics.club/q4j5imq9qjs9/source--me"
+}
+{
+  title: "ThirdThursdayNetworking: Global Virtual Career Networking Event",
+  start: "2025-10-16T16:00:00",
+  end: "2025-10-16T18:00:00",
+  location: "Online",
+  description:
+    "Join Analytics.Club Chicago for ThirdThursdayNetworking, a monthly global virtual career networking event for professionals, job seekers, and employers. This Slack-like platform event features themed chat channels, 1-on-1 video/text chats, peer learning, and collaborative hiring. Perfect for freelancers, remote workers, and career changers looking to connect and grow. Watch explainer: https://www.youtube.com/watch?v=quvbsg9Bl_g Join here: https://events.tao.ai/pod/analytics.club/iczn3u1w0ilm/source--me"
+}
+{
+  title: "AI, Budgets & the Bottom Line: A Tech Leadership Roundtable",
+  start: "2025-10-08T17:45:00",
+  end: "2025-10-08T18:45:00",
+  location: "Online",
+  description:
+    "Join Tech in Motion: Chicago for a virtual leadership roundtable exploring the intersection of AI, budgeting, and strategic growth. Hear from top tech executives about balancing AI investments, scaling responsibly, managing innovation under pressure, and evolving workforce strategies. Moderated by RJ Kedziora, with panelists from Estenda Solutions, Elsevier, Julius Silvert, Versento, and Navico Group.\nRegister here: https://events.techinmotion.com/ai-leadership-roundtable?utm_source=meetup-tim&utm_medium=email&utm_campaign=ai-leadership-roundtable-philly"
+}
+{
+  title: "Oracle AI Webinar (Ep 9) - Build AI Agents using LangChain and 23ai",
+  start: "2025-10-07T11:00:00",
+  end: "2025-10-07T12:00:00",
+  location: "Online",
+  description:
+    "Join the Chicago AI Developers Group for a virtual AI webinar in collaboration with Oracle. This hands-on session led by Blake Hendricks covers building AI agents using Python, LangChain, and Oracle Database 23ai. Learn how to design AI agents that reason over relational and RAG data, integrate with external tools, and maintain conversational context. Register on the event website for joining link and recordings.\nRegister here: https://www.aicamp.ai/event/eventdetails/W2025100709"
+}
 ];
 
 const calendar = new Calendar(calendarEl, {
